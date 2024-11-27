@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="temelinho">
+    <title>Muhammet TEMEL</title>
+    <link rel="stylesheet" href="web.css">
+</head>
+<body>
+    <header>
+        <p>Hoş Geldiniz!</p>
+    </header>
+    <div class="container">
+        <img src="fotom.jpg" />
+        <div class="content">h
+            <h2 class="about">Merhaba! Ben Muhammet TEMEL</h2>
+            <hr>
+            <div class="button-container">
+                <button class="btn-yellow" onclick="openPage('cv.html')">CV</button>
+                <button class="btn-navy" onclick="openPage('me.html')">Kişisel <br>Bilgiler</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Telefon: +90 506 692 20 04 &nbsp &nbsp Email: temelcan3449@gmail.com</p>
+        <p>&copy; 2024 Muhammet TEMEL</p>
+    </footer>
+    <div class="overlay" id="overlay"></div>
+    <script>
+        function openPage(url) {
+            var overlay = document.getElementById('overlay');
+            overlay.innerHTML = '<iframe src="' + url + '" style="width: 100%; height: 100%; border: none;"></iframe>';
+            overlay.classList.add('show');
+            setTimeout(function() {
+                window.location.href = url;
+            }, 500);
+        }
+    </script>
+</body>
+</html>
