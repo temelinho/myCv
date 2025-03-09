@@ -1,1 +1,1 @@
-Lisans 1. sınıfken yaptığım kişisel web sayfası temelinho.netlify.app
+Lisans 1. sınıfken yaptığım kişisel web sayfası https://temelinho.netlify.app
